@@ -1,0 +1,119 @@
+.flight-container{
+    width: 100%;
+    height: auto;
+
+
+    .flight-wrapper{
+        width: 100%;
+        height: auto;
+
+        .flight-container-form{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            margin: 2rem auto;
+            background-color: #fff;
+            border-radius: 4px;
+            width: 1280px;
+            display: flex;
+            flex-direction: column;
+            gap:1rem;
+
+            @media (max-width:1024px) {
+                margin: 1rem auto;
+                padding: 1rem;
+                gap: 2rem;
+                width: 768px;
+            }
+            @media (max-width:767px){
+                width: 370px;
+                margin: 1rem auto;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .title{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2rem;
+    font-weight: 600;
+    color: #00c2ff;
+  
+            }
+            .form-wrappper{
+                padding: 1rem;
+
+                .marginBottom{
+                    margin-bottom: 1rem;
+                }
+                .no-margin{
+                    margin: 0 !important;
+                }
+                
+                .traveller-details{
+                    
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+    min-height: auto !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    gap:1rem;
+  }
+  .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .MuiListItemIcon-root .list-item-text{
+  display: flex;
+  flex-direction: column;
+  }
+  .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .MuiListItemIcon-root .list-item-text .upper-text .sub-text{
+  
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: flex-start;
+      gap: 6px;
+  
+    }
+  
+    .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .counter-container{
+  
+      display: flex !important;
+      gap: 8px !important;
+      height: auto !important;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    
+    .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root .counter-container .button-container {
+      background-color: #ffe93d;
+      border: 1px solid #eee;
+      border-radius: 50%;
+      padding: 1rem;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      width: 10px;
+      height: 10px;
+  }
+  
+                  .list-item-text{
+                    .upper-text{
+                        .sub-text{
+                            display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+                        }
+                    }
+                  }
+                }
+            }
+        }
+    }
+}
+

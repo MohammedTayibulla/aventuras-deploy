@@ -1,0 +1,4079 @@
+const response={
+  "meta": {
+    "count": 17,
+    "links": {
+      "self": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=BLR&destinationLocationCode=MAA&departureDate=2023-06-24&returnDate=2023-06-24&adults=1&currencyCode=INR&max=250"
+    }
+  },
+  "data": [
+    {
+      "type": "flight-offer",
+      "id": "1",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "lastTicketingDate": "2023-06-24",
+      "lastTicketingDateTime": "2023-06-24",
+      "numberOfBookableSeats": 8,
+      "itineraries": [
+        {
+          "duration": "PT8H",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "BLR",
+                "at": "2023-06-24T09:15:00"
+              },
+              "arrival": {
+                "iataCode": "BOM",
+                "terminal": "2",
+                "at": "2023-06-24T11:30:00"
+              },
+              "carrierCode": "AI",
+              "number": "604",
+              "aircraft": {
+                "code": "320"
+              },
+              "operating": {
+                "carrierCode": "AI"
+              },
+              "duration": "PT2H15M",
+              "id": "1",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "BOM",
+                "terminal": "2",
+                "at": "2023-06-24T15:15:00"
+              },
+              "arrival": {
+                "iataCode": "MAA",
+                "terminal": "1",
+                "at": "2023-06-24T17:15:00"
+              },
+              "carrierCode": "AI",
+              "number": "572",
+              "aircraft": {
+                "code": "32A"
+              },
+              "operating": {
+                "carrierCode": "AI"
+              },
+              "duration": "PT2H",
+              "id": "2",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        },
+        {
+          "duration": "PT10H50M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "MAA",
+                "terminal": "1",
+                "at": "2023-06-24T21:40:00"
+              },
+              "arrival": {
+                "iataCode": "BOM",
+                "terminal": "2",
+                "at": "2023-06-24T23:50:00"
+              },
+              "carrierCode": "AI",
+              "number": "574",
+              "aircraft": {
+                "code": "32N"
+              },
+              "operating": {
+                "carrierCode": "AI"
+              },
+              "duration": "PT2H10M",
+              "id": "25",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "BOM",
+                "terminal": "2",
+                "at": "2023-06-25T06:45:00"
+              },
+              "arrival": {
+                "iataCode": "BLR",
+                "at": "2023-06-25T08:30:00"
+              },
+              "carrierCode": "AI",
+              "number": "603",
+              "aircraft": {
+                "code": "320"
+              },
+              "operating": {
+                "carrierCode": "AI"
+              },
+              "duration": "PT1H45M",
+              "id": "26",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "INR",
+        "total": "17088.00",
+        "base": "14306.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "17088.00"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "AI"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "INR",
+            "total": "17088.00",
+            "base": "14306.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "1",
+              "cabin": "ECONOMY",
+              "fareBasis": "UIP",
+              "class": "U",
+              "includedCheckedBags": {
+                "weight": 25,
+                "weightUnit": "KG"
+              }
+            },
+            {
+              "segmentId": "2",
+              "cabin": "ECONOMY",
+              "fareBasis": "LIP",
+              "class": "L",
+              "includedCheckedBags": {
+                "weight": 25,
+                "weightUnit": "KG"
+              }
+            },
+            {
+              "segmentId": "25",
+              "cabin": "ECONOMY",
+              "fareBasis": "LIP",
+              "class": "L",
+              "includedCheckedBags": {
+                "weight": 25,
+                "weightUnit": "KG"
+              }
+            },
+            {
+              "segmentId": "26",
+              "cabin": "ECONOMY",
+              "fareBasis": "UIP",
+              "class": "U",
+              "includedCheckedBags": {
+                "weight": 25,
+                "weightUnit": "KG"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "2",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "lastTicketingDate": "2023-06-24",
+      "lastTicketingDateTime": "2023-06-24",
+      "numberOfBookableSeats": 5,
+      "itineraries": [
+        {
+          "duration": "PT10H30M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "BLR",
+                "at": "2023-06-24T06:45:00"
+              },
+              "arrival": {
+                "iataCode": "BOM",
+                "terminal": "2",
+                "at": "2023-06-24T08:35:00"
+              },
+              "carrierCode": "AI",
+              "number": "640",
+              "aircraft": {
+                "code": "32N"
+              },
+              "operating": {
+                "carrierCode": "AI"
+              },
+              "duration": "PT1H50M",
+              "id": "11",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "BOM",
+                "terminal": "2",
+                "at": "2023-06-24T15:15:00"
+              },
+              "arrival": {
+                "iataCode": "MAA",
+                "terminal": "1",
+                "at": "2023-06-24T17:15:00"
+              },
+              "carrierCode": "AI",
+              "number": "572",
+              "aircraft": {
+                "code": "32A"
+              },
+              "operating": {
+                "carrierCode": "AI"
+              },
+              "duration": "PT2H",
+              "id": "12",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        },
+        {
+          "duration": "PT10H50M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "MAA",
+                "terminal": "1",
+                "at": "2023-06-24T21:40:00"
+              },
+              "arrival": {
+                "iataCode": "BOM",
+                "terminal": "2",
+                "at": "2023-06-24T23:50:00"
+              },
+              "carrierCode": "AI",
+              "number": "574",
+              "aircraft": {
+                "code": "32N"
+              },
+              "operating": {
+                "carrierCode": "AI"
+              },
+              "duration": "PT2H10M",
+              "id": "25",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "BOM",
+                "terminal": "2",
+                "at": "2023-06-25T06:45:00"
+              },
+              "arrival": {
+                "iataCode": "BLR",
+                "at": "2023-06-25T08:30:00"
+              },
+              "carrierCode": "AI",
+              "number": "603",
+              "aircraft": {
+                "code": "320"
+              },
+              "operating": {
+                "carrierCode": "AI"
+              },
+              "duration": "PT1H45M",
+              "id": "26",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "INR",
+        "total": "17088.00",
+        "base": "14306.00",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "17088.00"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": true
+      },
+      "validatingAirlineCodes": [
+        "AI"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "INR",
+            "total": "17088.00",
+            "base": "14306.00"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "11",
+              "cabin": "ECONOMY",
+              "fareBasis": "UIP",
+              "class": "U",
+              "includedCheckedBags": {
+                "weight": 25,
+                "weightUnit": "KG"
+              }
+            },
+            {
+              "segmentId": "12",
+              "cabin": "ECONOMY",
+              "fareBasis": "LIP",
+              "class": "L",
+              "includedCheckedBags": {
+                "weight": 25,
+                "weightUnit": "KG"
+              }
+            },
+            {
+              "segmentId": "25",
+              "cabin": "ECONOMY",
+              "fareBasis": "LIP",
+              "class": "L",
+              "includedCheckedBags": {
+                "weight": 25,
+                "weightUnit": "KG"
+              }
+            },
+            {
+              "segmentId": "26",
+              "cabin": "ECONOMY",
+              "fareBasis": "UIP",
+              "class": "U",
+              "includedCheckedBags": {
+                "weight": 25,
+                "weightUnit": "KG"
+              }
+            }
+          ]
+        }
+      ]
+    } ],
+    "dictionaries": {
+      "locations": {
+        "BOM": {
+          "cityCode": "BOM",
+          "countryCode": "IN"
+        },
+        "IXB": {
+          "cityCode": "IXB",
+          "countryCode": "IN"
+        },
+        "BLR": {
+          "cityCode": "BLR",
+          "countryCode": "IN"
+        },
+        "DEL": {
+          "cityCode": "DEL",
+          "countryCode": "IN"
+        },
+        "MAA": {
+          "cityCode": "MAA",
+          "countryCode": "IN"
+        }
+      },
+      "aircraft": {
+        "319": "AIRBUS A319",
+        "320": "AIRBUS A320",
+        "321": "AIRBUS A321",
+        "737": "BOEING 737 ALL SERIES PASSENGER",
+        "32A": "AIRBUS A320 (SHARKLETS)",
+        "32N": "AIRBUS A320NEO"
+      },
+      "currencies": {
+        "INR": "INDIAN RUPEE"
+      },
+      "carriers": {
+        "SG": "SPICEJET",
+        "AI": "AIR INDIA"
+      }
+    }
+  }
+
+
+
+const response3={
+    "meta": {
+      "count": 17,
+      "links": {
+        "self": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=BLR&destinationLocationCode=MAA&departureDate=2023-06-24&returnDate=2023-06-24&adults=1&currencyCode=INR&max=250"
+      }
+    },
+    "data": [
+      {
+        "type": "flight-offer",
+        "id": "1",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "oneWay": false,
+        "lastTicketingDate": "2023-06-24",
+        "lastTicketingDateTime": "2023-06-24",
+        "numberOfBookableSeats": 8,
+        "itineraries": [
+          {
+            "duration": "PT8H",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-24T09:15:00"
+                },
+                "arrival": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T11:30:00"
+                },
+                "carrierCode": "AI",
+                "number": "604",
+                "aircraft": {
+                  "code": "320"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H15M",
+                "id": "1",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T15:15:00"
+                },
+                "arrival": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T17:15:00"
+                },
+                "carrierCode": "AI",
+                "number": "572",
+                "aircraft": {
+                  "code": "32A"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H",
+                "id": "2",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          },
+          {
+            "duration": "PT10H50M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T21:40:00"
+                },
+                "arrival": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T23:50:00"
+                },
+                "carrierCode": "AI",
+                "number": "574",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H10M",
+                "id": "25",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-25T06:45:00"
+                },
+                "arrival": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-25T08:30:00"
+                },
+                "carrierCode": "AI",
+                "number": "603",
+                "aircraft": {
+                  "code": "320"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT1H45M",
+                "id": "26",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "total": "17088.00",
+          "base": "14306.00",
+          "fees": [
+            {
+              "amount": "0.00",
+              "type": "SUPPLIER"
+            },
+            {
+              "amount": "0.00",
+              "type": "TICKETING"
+            }
+          ],
+          "grandTotal": "17088.00"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": true
+        },
+        "validatingAirlineCodes": [
+          "AI"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "INR",
+              "total": "17088.00",
+              "base": "14306.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "1",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "2",
+                "cabin": "ECONOMY",
+                "fareBasis": "LIP",
+                "class": "L",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "25",
+                "cabin": "ECONOMY",
+                "fareBasis": "LIP",
+                "class": "L",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "26",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "flight-offer",
+        "id": "2",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "oneWay": false,
+        "lastTicketingDate": "2023-06-24",
+        "lastTicketingDateTime": "2023-06-24",
+        "numberOfBookableSeats": 5,
+        "itineraries": [
+          {
+            "duration": "PT10H30M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-24T06:45:00"
+                },
+                "arrival": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T08:35:00"
+                },
+                "carrierCode": "AI",
+                "number": "640",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT1H50M",
+                "id": "11",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T15:15:00"
+                },
+                "arrival": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T17:15:00"
+                },
+                "carrierCode": "AI",
+                "number": "572",
+                "aircraft": {
+                  "code": "32A"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H",
+                "id": "12",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          },
+          {
+            "duration": "PT10H50M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T21:40:00"
+                },
+                "arrival": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T23:50:00"
+                },
+                "carrierCode": "AI",
+                "number": "574",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H10M",
+                "id": "25",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-25T06:45:00"
+                },
+                "arrival": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-25T08:30:00"
+                },
+                "carrierCode": "AI",
+                "number": "603",
+                "aircraft": {
+                  "code": "320"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT1H45M",
+                "id": "26",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "total": "17088.00",
+          "base": "14306.00",
+          "fees": [
+            {
+              "amount": "0.00",
+              "type": "SUPPLIER"
+            },
+            {
+              "amount": "0.00",
+              "type": "TICKETING"
+            }
+          ],
+          "grandTotal": "17088.00"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": true
+        },
+        "validatingAirlineCodes": [
+          "AI"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "INR",
+              "total": "17088.00",
+              "base": "14306.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "11",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "12",
+                "cabin": "ECONOMY",
+                "fareBasis": "LIP",
+                "class": "L",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "25",
+                "cabin": "ECONOMY",
+                "fareBasis": "LIP",
+                "class": "L",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "26",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "flight-offer",
+        "id": "3",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "oneWay": false,
+        "lastTicketingDate": "2023-06-24",
+        "lastTicketingDateTime": "2023-06-24",
+        "numberOfBookableSeats": 5,
+        "itineraries": [
+          {
+            "duration": "PT8H",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-24T09:15:00"
+                },
+                "arrival": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T11:30:00"
+                },
+                "carrierCode": "AI",
+                "number": "604",
+                "aircraft": {
+                  "code": "320"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H15M",
+                "id": "1",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T15:15:00"
+                },
+                "arrival": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T17:15:00"
+                },
+                "carrierCode": "AI",
+                "number": "572",
+                "aircraft": {
+                  "code": "32A"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H",
+                "id": "2",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          },
+          {
+            "duration": "PT13H30M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T21:40:00"
+                },
+                "arrival": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T23:50:00"
+                },
+                "carrierCode": "AI",
+                "number": "574",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H10M",
+                "id": "23",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-25T09:30:00"
+                },
+                "arrival": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-25T11:10:00"
+                },
+                "carrierCode": "AI",
+                "number": "639",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT1H40M",
+                "id": "24",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "total": "17088.00",
+          "base": "14306.00",
+          "fees": [
+            {
+              "amount": "0.00",
+              "type": "SUPPLIER"
+            },
+            {
+              "amount": "0.00",
+              "type": "TICKETING"
+            }
+          ],
+          "grandTotal": "17088.00"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": true
+        },
+        "validatingAirlineCodes": [
+          "AI"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "INR",
+              "total": "17088.00",
+              "base": "14306.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "1",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "2",
+                "cabin": "ECONOMY",
+                "fareBasis": "LIP",
+                "class": "L",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "23",
+                "cabin": "ECONOMY",
+                "fareBasis": "LIP",
+                "class": "L",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "24",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "flight-offer",
+        "id": "4",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "oneWay": false,
+        "lastTicketingDate": "2023-06-24",
+        "lastTicketingDateTime": "2023-06-24",
+        "numberOfBookableSeats": 5,
+        "itineraries": [
+          {
+            "duration": "PT10H30M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-24T06:45:00"
+                },
+                "arrival": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T08:35:00"
+                },
+                "carrierCode": "AI",
+                "number": "640",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT1H50M",
+                "id": "11",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T15:15:00"
+                },
+                "arrival": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T17:15:00"
+                },
+                "carrierCode": "AI",
+                "number": "572",
+                "aircraft": {
+                  "code": "32A"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H",
+                "id": "12",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          },
+          {
+            "duration": "PT13H30M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T21:40:00"
+                },
+                "arrival": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T23:50:00"
+                },
+                "carrierCode": "AI",
+                "number": "574",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H10M",
+                "id": "23",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-25T09:30:00"
+                },
+                "arrival": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-25T11:10:00"
+                },
+                "carrierCode": "AI",
+                "number": "639",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT1H40M",
+                "id": "24",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "total": "17088.00",
+          "base": "14306.00",
+          "fees": [
+            {
+              "amount": "0.00",
+              "type": "SUPPLIER"
+            },
+            {
+              "amount": "0.00",
+              "type": "TICKETING"
+            }
+          ],
+          "grandTotal": "17088.00"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": true
+        },
+        "validatingAirlineCodes": [
+          "AI"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "INR",
+              "total": "17088.00",
+              "base": "14306.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "11",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "12",
+                "cabin": "ECONOMY",
+                "fareBasis": "LIP",
+                "class": "L",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "23",
+                "cabin": "ECONOMY",
+                "fareBasis": "LIP",
+                "class": "L",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "24",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "flight-offer",
+        "id": "5",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "oneWay": false,
+        "lastTicketingDate": "2023-06-24",
+        "lastTicketingDateTime": "2023-06-24",
+        "numberOfBookableSeats": 1,
+        "itineraries": [
+          {
+            "duration": "PT8H35M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "BLR",
+                  "terminal": "1",
+                  "at": "2023-06-24T06:10:00"
+                },
+                "arrival": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T08:55:00"
+                },
+                "carrierCode": "AI",
+                "number": "804",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H45M",
+                "id": "13",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T11:50:00"
+                },
+                "arrival": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T14:45:00"
+                },
+                "carrierCode": "AI",
+                "number": "554",
+                "aircraft": {
+                  "code": "319"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H55M",
+                "id": "14",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          },
+          {
+            "duration": "PT13H30M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T21:40:00"
+                },
+                "arrival": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T23:50:00"
+                },
+                "carrierCode": "AI",
+                "number": "574",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H10M",
+                "id": "23",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-25T09:30:00"
+                },
+                "arrival": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-25T11:10:00"
+                },
+                "carrierCode": "AI",
+                "number": "639",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT1H40M",
+                "id": "24",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "total": "22058.00",
+          "base": "19226.00",
+          "fees": [
+            {
+              "amount": "0.00",
+              "type": "SUPPLIER"
+            },
+            {
+              "amount": "0.00",
+              "type": "TICKETING"
+            }
+          ],
+          "grandTotal": "22058.00"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": true
+        },
+        "validatingAirlineCodes": [
+          "AI"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "INR",
+              "total": "22058.00",
+              "base": "19226.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "13",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "14",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIPFS",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "23",
+                "cabin": "ECONOMY",
+                "fareBasis": "LIP",
+                "class": "L",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "24",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "flight-offer",
+        "id": "6",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "oneWay": false,
+        "lastTicketingDate": "2023-06-24",
+        "lastTicketingDateTime": "2023-06-24",
+        "numberOfBookableSeats": 5,
+        "itineraries": [
+          {
+            "duration": "PT8H15M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "BLR",
+                  "terminal": "1",
+                  "at": "2023-06-24T11:15:00"
+                },
+                "arrival": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T14:20:00"
+                },
+                "carrierCode": "AI",
+                "number": "507",
+                "aircraft": {
+                  "code": "321"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT3H5M",
+                "id": "3",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T16:15:00"
+                },
+                "arrival": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T19:30:00"
+                },
+                "carrierCode": "AI",
+                "number": "537",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT3H15M",
+                "id": "4",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          },
+          {
+            "duration": "PT10H50M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T21:40:00"
+                },
+                "arrival": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T23:50:00"
+                },
+                "carrierCode": "AI",
+                "number": "574",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H10M",
+                "id": "25",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-25T06:45:00"
+                },
+                "arrival": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-25T08:30:00"
+                },
+                "carrierCode": "AI",
+                "number": "603",
+                "aircraft": {
+                  "code": "320"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT1H45M",
+                "id": "26",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "total": "22068.00",
+          "base": "19236.00",
+          "fees": [
+            {
+              "amount": "0.00",
+              "type": "SUPPLIER"
+            },
+            {
+              "amount": "0.00",
+              "type": "TICKETING"
+            }
+          ],
+          "grandTotal": "22068.00"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": true
+        },
+        "validatingAirlineCodes": [
+          "AI"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "INR",
+              "total": "22068.00",
+              "base": "19236.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "3",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "4",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIPFS",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "25",
+                "cabin": "ECONOMY",
+                "fareBasis": "LIP",
+                "class": "L",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "26",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "flight-offer",
+        "id": "7",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "oneWay": false,
+        "lastTicketingDate": "2023-06-24",
+        "lastTicketingDateTime": "2023-06-24",
+        "numberOfBookableSeats": 5,
+        "itineraries": [
+          {
+            "duration": "PT9H30M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-24T10:00:00"
+                },
+                "arrival": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T12:50:00"
+                },
+                "carrierCode": "AI",
+                "number": "505",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H50M",
+                "id": "9",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T16:15:00"
+                },
+                "arrival": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T19:30:00"
+                },
+                "carrierCode": "AI",
+                "number": "537",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT3H15M",
+                "id": "10",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          },
+          {
+            "duration": "PT10H50M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T21:40:00"
+                },
+                "arrival": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T23:50:00"
+                },
+                "carrierCode": "AI",
+                "number": "574",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H10M",
+                "id": "25",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-25T06:45:00"
+                },
+                "arrival": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-25T08:30:00"
+                },
+                "carrierCode": "AI",
+                "number": "603",
+                "aircraft": {
+                  "code": "320"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT1H45M",
+                "id": "26",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "total": "22068.00",
+          "base": "19236.00",
+          "fees": [
+            {
+              "amount": "0.00",
+              "type": "SUPPLIER"
+            },
+            {
+              "amount": "0.00",
+              "type": "TICKETING"
+            }
+          ],
+          "grandTotal": "22068.00"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": true
+        },
+        "validatingAirlineCodes": [
+          "AI"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "INR",
+              "total": "22068.00",
+              "base": "19236.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "9",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "10",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIPFS",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "25",
+                "cabin": "ECONOMY",
+                "fareBasis": "LIP",
+                "class": "L",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "26",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "flight-offer",
+        "id": "8",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "oneWay": false,
+        "lastTicketingDate": "2023-06-24",
+        "lastTicketingDateTime": "2023-06-24",
+        "numberOfBookableSeats": 5,
+        "itineraries": [
+          {
+            "duration": "PT8H15M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "BLR",
+                  "terminal": "1",
+                  "at": "2023-06-24T11:15:00"
+                },
+                "arrival": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T14:20:00"
+                },
+                "carrierCode": "AI",
+                "number": "507",
+                "aircraft": {
+                  "code": "321"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT3H5M",
+                "id": "3",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T16:15:00"
+                },
+                "arrival": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T19:30:00"
+                },
+                "carrierCode": "AI",
+                "number": "537",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT3H15M",
+                "id": "4",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          },
+          {
+            "duration": "PT13H30M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T21:40:00"
+                },
+                "arrival": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T23:50:00"
+                },
+                "carrierCode": "AI",
+                "number": "574",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H10M",
+                "id": "23",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-25T09:30:00"
+                },
+                "arrival": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-25T11:10:00"
+                },
+                "carrierCode": "AI",
+                "number": "639",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT1H40M",
+                "id": "24",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "total": "22068.00",
+          "base": "19236.00",
+          "fees": [
+            {
+              "amount": "0.00",
+              "type": "SUPPLIER"
+            },
+            {
+              "amount": "0.00",
+              "type": "TICKETING"
+            }
+          ],
+          "grandTotal": "22068.00"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": true
+        },
+        "validatingAirlineCodes": [
+          "AI"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "INR",
+              "total": "22068.00",
+              "base": "19236.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "3",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "4",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIPFS",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "23",
+                "cabin": "ECONOMY",
+                "fareBasis": "LIP",
+                "class": "L",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "24",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "flight-offer",
+        "id": "9",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "oneWay": false,
+        "lastTicketingDate": "2023-06-24",
+        "lastTicketingDateTime": "2023-06-24",
+        "numberOfBookableSeats": 5,
+        "itineraries": [
+          {
+            "duration": "PT9H30M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-24T10:00:00"
+                },
+                "arrival": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T12:50:00"
+                },
+                "carrierCode": "AI",
+                "number": "505",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H50M",
+                "id": "9",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T16:15:00"
+                },
+                "arrival": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T19:30:00"
+                },
+                "carrierCode": "AI",
+                "number": "537",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT3H15M",
+                "id": "10",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          },
+          {
+            "duration": "PT13H30M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T21:40:00"
+                },
+                "arrival": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T23:50:00"
+                },
+                "carrierCode": "AI",
+                "number": "574",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H10M",
+                "id": "23",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-25T09:30:00"
+                },
+                "arrival": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-25T11:10:00"
+                },
+                "carrierCode": "AI",
+                "number": "639",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT1H40M",
+                "id": "24",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "total": "22068.00",
+          "base": "19236.00",
+          "fees": [
+            {
+              "amount": "0.00",
+              "type": "SUPPLIER"
+            },
+            {
+              "amount": "0.00",
+              "type": "TICKETING"
+            }
+          ],
+          "grandTotal": "22068.00"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": true
+        },
+        "validatingAirlineCodes": [
+          "AI"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "INR",
+              "total": "22068.00",
+              "base": "19236.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "9",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "10",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIPFS",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "23",
+                "cabin": "ECONOMY",
+                "fareBasis": "LIP",
+                "class": "L",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "24",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "flight-offer",
+        "id": "10",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "oneWay": false,
+        "lastTicketingDate": "2023-06-24",
+        "lastTicketingDateTime": "2023-06-24",
+        "numberOfBookableSeats": 1,
+        "itineraries": [
+          {
+            "duration": "PT8H35M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "BLR",
+                  "terminal": "1",
+                  "at": "2023-06-24T06:10:00"
+                },
+                "arrival": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T08:55:00"
+                },
+                "carrierCode": "AI",
+                "number": "804",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H45M",
+                "id": "13",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T11:50:00"
+                },
+                "arrival": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T14:45:00"
+                },
+                "carrierCode": "AI",
+                "number": "554",
+                "aircraft": {
+                  "code": "319"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H55M",
+                "id": "14",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          },
+          {
+            "duration": "PT10H50M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T21:40:00"
+                },
+                "arrival": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T23:50:00"
+                },
+                "carrierCode": "AI",
+                "number": "574",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H10M",
+                "id": "25",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-25T06:45:00"
+                },
+                "arrival": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-25T08:30:00"
+                },
+                "carrierCode": "AI",
+                "number": "603",
+                "aircraft": {
+                  "code": "320"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT1H45M",
+                "id": "26",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "total": "22079.00",
+          "base": "19246.00",
+          "fees": [
+            {
+              "amount": "0.00",
+              "type": "SUPPLIER"
+            },
+            {
+              "amount": "0.00",
+              "type": "TICKETING"
+            }
+          ],
+          "grandTotal": "22079.00"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": true
+        },
+        "validatingAirlineCodes": [
+          "AI"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "INR",
+              "total": "22079.00",
+              "base": "19246.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "13",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "14",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIPFS",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "25",
+                "cabin": "ECONOMY",
+                "fareBasis": "LIP",
+                "class": "L",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "26",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "flight-offer",
+        "id": "11",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "oneWay": false,
+        "lastTicketingDate": "2023-06-24",
+        "lastTicketingDateTime": "2023-06-24",
+        "numberOfBookableSeats": 8,
+        "itineraries": [
+          {
+            "duration": "PT6H30M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "BLR",
+                  "terminal": "1",
+                  "at": "2023-06-24T06:10:00"
+                },
+                "arrival": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T08:55:00"
+                },
+                "carrierCode": "AI",
+                "number": "804",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H45M",
+                "id": "7",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T09:45:00"
+                },
+                "arrival": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T12:40:00"
+                },
+                "carrierCode": "AI",
+                "number": "429",
+                "aircraft": {
+                  "code": "321"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H55M",
+                "id": "8",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          },
+          {
+            "duration": "PT10H50M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T21:40:00"
+                },
+                "arrival": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T23:50:00"
+                },
+                "carrierCode": "AI",
+                "number": "574",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H10M",
+                "id": "25",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-25T06:45:00"
+                },
+                "arrival": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-25T08:30:00"
+                },
+                "carrierCode": "AI",
+                "number": "603",
+                "aircraft": {
+                  "code": "320"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT1H45M",
+                "id": "26",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "total": "22089.00",
+          "base": "19256.00",
+          "fees": [
+            {
+              "amount": "0.00",
+              "type": "SUPPLIER"
+            },
+            {
+              "amount": "0.00",
+              "type": "TICKETING"
+            }
+          ],
+          "grandTotal": "22089.00"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": true
+        },
+        "validatingAirlineCodes": [
+          "AI"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "INR",
+              "total": "22089.00",
+              "base": "19256.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "7",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "8",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIPFS",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "25",
+                "cabin": "ECONOMY",
+                "fareBasis": "LIP",
+                "class": "L",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "26",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "flight-offer",
+        "id": "12",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "oneWay": false,
+        "lastTicketingDate": "2023-06-24",
+        "lastTicketingDateTime": "2023-06-24",
+        "numberOfBookableSeats": 5,
+        "itineraries": [
+          {
+            "duration": "PT6H30M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "BLR",
+                  "terminal": "1",
+                  "at": "2023-06-24T06:10:00"
+                },
+                "arrival": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T08:55:00"
+                },
+                "carrierCode": "AI",
+                "number": "804",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H45M",
+                "id": "7",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T09:45:00"
+                },
+                "arrival": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T12:40:00"
+                },
+                "carrierCode": "AI",
+                "number": "429",
+                "aircraft": {
+                  "code": "321"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H55M",
+                "id": "8",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          },
+          {
+            "duration": "PT13H30M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T21:40:00"
+                },
+                "arrival": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T23:50:00"
+                },
+                "carrierCode": "AI",
+                "number": "574",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H10M",
+                "id": "23",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-25T09:30:00"
+                },
+                "arrival": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-25T11:10:00"
+                },
+                "carrierCode": "AI",
+                "number": "639",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT1H40M",
+                "id": "24",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "total": "22089.00",
+          "base": "19256.00",
+          "fees": [
+            {
+              "amount": "0.00",
+              "type": "SUPPLIER"
+            },
+            {
+              "amount": "0.00",
+              "type": "TICKETING"
+            }
+          ],
+          "grandTotal": "22089.00"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": true
+        },
+        "validatingAirlineCodes": [
+          "AI"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "INR",
+              "total": "22089.00",
+              "base": "19256.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "7",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "8",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIPFS",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "23",
+                "cabin": "ECONOMY",
+                "fareBasis": "LIP",
+                "class": "L",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "24",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "flight-offer",
+        "id": "13",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "oneWay": false,
+        "lastTicketingDate": "2023-06-24",
+        "lastTicketingDateTime": "2023-06-24",
+        "numberOfBookableSeats": 1,
+        "itineraries": [
+          {
+            "duration": "PT6H30M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "BLR",
+                  "terminal": "1",
+                  "at": "2023-06-24T06:10:00"
+                },
+                "arrival": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T08:55:00"
+                },
+                "carrierCode": "AI",
+                "number": "804",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H45M",
+                "id": "7",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T09:45:00"
+                },
+                "arrival": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T12:40:00"
+                },
+                "carrierCode": "AI",
+                "number": "429",
+                "aircraft": {
+                  "code": "321"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H55M",
+                "id": "8",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          },
+          {
+            "duration": "PT4H20M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T16:10:00"
+                },
+                "arrival": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T18:00:00"
+                },
+                "carrierCode": "AI",
+                "number": "672",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT1H50M",
+                "id": "19",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T18:50:00"
+                },
+                "arrival": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-24T20:30:00"
+                },
+                "carrierCode": "AI",
+                "number": "641",
+                "aircraft": {
+                  "code": "32A"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT1H40M",
+                "id": "20",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "total": "22121.00",
+          "base": "19286.00",
+          "fees": [
+            {
+              "amount": "0.00",
+              "type": "SUPPLIER"
+            },
+            {
+              "amount": "0.00",
+              "type": "TICKETING"
+            }
+          ],
+          "grandTotal": "22121.00"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": true
+        },
+        "validatingAirlineCodes": [
+          "AI"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "INR",
+              "total": "22121.00",
+              "base": "19286.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "7",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "8",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIPFS",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "19",
+                "cabin": "ECONOMY",
+                "fareBasis": "LIP",
+                "class": "L",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "20",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "flight-offer",
+        "id": "14",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "oneWay": false,
+        "lastTicketingDate": "2023-06-24",
+        "lastTicketingDateTime": "2023-06-24",
+        "numberOfBookableSeats": 1,
+        "itineraries": [
+          {
+            "duration": "PT8H35M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "BLR",
+                  "terminal": "1",
+                  "at": "2023-06-24T06:10:00"
+                },
+                "arrival": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T08:55:00"
+                },
+                "carrierCode": "AI",
+                "number": "804",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H45M",
+                "id": "13",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T11:50:00"
+                },
+                "arrival": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T14:45:00"
+                },
+                "carrierCode": "AI",
+                "number": "554",
+                "aircraft": {
+                  "code": "319"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H55M",
+                "id": "14",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          },
+          {
+            "duration": "PT7H10M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T16:55:00"
+                },
+                "arrival": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T19:50:00"
+                },
+                "carrierCode": "AI",
+                "number": "539",
+                "aircraft": {
+                  "code": "321"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H55M",
+                "id": "15",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T21:15:00"
+                },
+                "arrival": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-25T00:05:00"
+                },
+                "carrierCode": "AI",
+                "number": "504",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H50M",
+                "id": "16",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "total": "27483.00",
+          "base": "24206.00",
+          "fees": [
+            {
+              "amount": "0.00",
+              "type": "SUPPLIER"
+            },
+            {
+              "amount": "0.00",
+              "type": "TICKETING"
+            }
+          ],
+          "grandTotal": "27483.00"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": true
+        },
+        "validatingAirlineCodes": [
+          "AI"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "INR",
+              "total": "27483.00",
+              "base": "24206.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "13",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "14",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIPFS",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "15",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIPFS",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "16",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "flight-offer",
+        "id": "15",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "oneWay": false,
+        "lastTicketingDate": "2023-06-24",
+        "lastTicketingDateTime": "2023-06-24",
+        "numberOfBookableSeats": 1,
+        "itineraries": [
+          {
+            "duration": "PT6H30M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "BLR",
+                  "terminal": "1",
+                  "at": "2023-06-24T06:10:00"
+                },
+                "arrival": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T08:55:00"
+                },
+                "carrierCode": "AI",
+                "number": "804",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H45M",
+                "id": "7",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T09:45:00"
+                },
+                "arrival": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T12:40:00"
+                },
+                "carrierCode": "AI",
+                "number": "429",
+                "aircraft": {
+                  "code": "321"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H55M",
+                "id": "8",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          },
+          {
+            "duration": "PT8H25M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T15:40:00"
+                },
+                "arrival": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T18:40:00"
+                },
+                "carrierCode": "AI",
+                "number": "557",
+                "aircraft": {
+                  "code": "319"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT3H",
+                "id": "21",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T21:15:00"
+                },
+                "arrival": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-25T00:05:00"
+                },
+                "carrierCode": "AI",
+                "number": "504",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H50M",
+                "id": "22",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "total": "27504.00",
+          "base": "24226.00",
+          "fees": [
+            {
+              "amount": "0.00",
+              "type": "SUPPLIER"
+            },
+            {
+              "amount": "0.00",
+              "type": "TICKETING"
+            }
+          ],
+          "grandTotal": "27504.00"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": true
+        },
+        "validatingAirlineCodes": [
+          "AI"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "INR",
+              "total": "27504.00",
+              "base": "24226.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "7",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "8",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIPFS",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "21",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIPFS",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "22",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "flight-offer",
+        "id": "16",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "oneWay": false,
+        "lastTicketingDate": "2023-06-24",
+        "lastTicketingDateTime": "2023-06-24",
+        "numberOfBookableSeats": 8,
+        "itineraries": [
+          {
+            "duration": "PT6H30M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "BLR",
+                  "terminal": "1",
+                  "at": "2023-06-24T06:10:00"
+                },
+                "arrival": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T08:55:00"
+                },
+                "carrierCode": "AI",
+                "number": "804",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H45M",
+                "id": "7",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T09:45:00"
+                },
+                "arrival": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T12:40:00"
+                },
+                "carrierCode": "AI",
+                "number": "429",
+                "aircraft": {
+                  "code": "321"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H55M",
+                "id": "8",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          },
+          {
+            "duration": "PT7H10M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T16:55:00"
+                },
+                "arrival": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T19:50:00"
+                },
+                "carrierCode": "AI",
+                "number": "539",
+                "aircraft": {
+                  "code": "321"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H55M",
+                "id": "15",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-24T21:15:00"
+                },
+                "arrival": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-25T00:05:00"
+                },
+                "carrierCode": "AI",
+                "number": "504",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H50M",
+                "id": "16",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "total": "27514.00",
+          "base": "24236.00",
+          "fees": [
+            {
+              "amount": "0.00",
+              "type": "SUPPLIER"
+            },
+            {
+              "amount": "0.00",
+              "type": "TICKETING"
+            }
+          ],
+          "grandTotal": "27514.00"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": true
+        },
+        "validatingAirlineCodes": [
+          "AI"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "INR",
+              "total": "27514.00",
+              "base": "24236.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "7",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "8",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIPFS",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "15",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIPFS",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "16",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "flight-offer",
+        "id": "17",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "oneWay": false,
+        "lastTicketingDate": "2023-06-24",
+        "lastTicketingDateTime": "2023-06-24",
+        "numberOfBookableSeats": 9,
+        "itineraries": [
+          {
+            "duration": "PT12H20M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-24T06:05:00"
+                },
+                "arrival": {
+                  "iataCode": "IXB",
+                  "at": "2023-06-24T09:05:00"
+                },
+                "carrierCode": "SG",
+                "number": "327",
+                "aircraft": {
+                  "code": "737"
+                },
+                "operating": {
+                  "carrierCode": "SG"
+                },
+                "duration": "PT3H",
+                "id": "5",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "IXB",
+                  "at": "2023-06-24T15:30:00"
+                },
+                "arrival": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T18:25:00"
+                },
+                "carrierCode": "SG",
+                "number": "322",
+                "aircraft": {
+                  "code": "737"
+                },
+                "operating": {
+                  "carrierCode": "SG"
+                },
+                "duration": "PT2H55M",
+                "id": "6",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          },
+          {
+            "duration": "PT11H15M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T21:40:00"
+                },
+                "arrival": {
+                  "iataCode": "DEL",
+                  "terminal": "3",
+                  "at": "2023-06-25T00:25:00"
+                },
+                "carrierCode": "SG",
+                "number": "8108",
+                "aircraft": {
+                  "code": "737"
+                },
+                "operating": {
+                  "carrierCode": "SG"
+                },
+                "duration": "PT2H45M",
+                "id": "17",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "DEL",
+                  "terminal": "1D",
+                  "at": "2023-06-25T06:05:00"
+                },
+                "arrival": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-25T08:55:00"
+                },
+                "carrierCode": "SG",
+                "number": "191",
+                "aircraft": {
+                  "code": "737"
+                },
+                "operating": {
+                  "carrierCode": "SG"
+                },
+                "duration": "PT2H50M",
+                "id": "18",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "total": "57090.00",
+          "base": "48974.00",
+          "fees": [
+            {
+              "amount": "0.00",
+              "type": "SUPPLIER"
+            },
+            {
+              "amount": "0.00",
+              "type": "TICKETING"
+            }
+          ],
+          "grandTotal": "57090.00"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": true
+        },
+        "validatingAirlineCodes": [
+          "GP"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "INR",
+              "total": "57090.00",
+              "base": "48974.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "5",
+                "cabin": "ECONOMY",
+                "fareBasis": "USAVER",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 15,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "6",
+                "cabin": "ECONOMY",
+                "fareBasis": "USAVER",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 15,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "17",
+                "cabin": "ECONOMY",
+                "fareBasis": "USAVER",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 15,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "18",
+                "cabin": "ECONOMY",
+                "fareBasis": "USAVER",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 15,
+                  "weightUnit": "KG"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "dictionaries": {
+      "locations": {
+        "BOM": {
+          "cityCode": "BOM",
+          "countryCode": "IN"
+        },
+        "IXB": {
+          "cityCode": "IXB",
+          "countryCode": "IN"
+        },
+        "BLR": {
+          "cityCode": "BLR",
+          "countryCode": "IN"
+        },
+        "DEL": {
+          "cityCode": "DEL",
+          "countryCode": "IN"
+        },
+        "MAA": {
+          "cityCode": "MAA",
+          "countryCode": "IN"
+        }
+      },
+      "aircraft": {
+        "319": "AIRBUS A319",
+        "320": "AIRBUS A320",
+        "321": "AIRBUS A321",
+        "737": "BOEING 737 ALL SERIES PASSENGER",
+        "32A": "AIRBUS A320 (SHARKLETS)",
+        "32N": "AIRBUS A320NEO"
+      },
+      "currencies": {
+        "INR": "INDIAN RUPEE"
+      },
+      "carriers": {
+        "SG": "SPICEJET",
+        "AI": "AIR INDIA"
+      }
+    }
+  }
+
+
+  const singleResponse={
+    "meta": {
+      "count": 17,
+      "links": {
+        "self": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=BLR&destinationLocationCode=MAA&departureDate=2023-06-24&returnDate=2023-06-24&adults=1&currencyCode=INR&max=250"
+      }
+    },
+    "data": [
+      {
+        "type": "flight-offer",
+        "id": "1",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "oneWay": false,
+        "lastTicketingDate": "2023-06-24",
+        "lastTicketingDateTime": "2023-06-24",
+        "numberOfBookableSeats": 8,
+        "itineraries": [
+          {
+            "duration": "PT8H",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-24T09:15:00"
+                },
+                "arrival": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T11:30:00"
+                },
+                "carrierCode": "AI",
+                "number": "604",
+                "aircraft": {
+                  "code": "320"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H15M",
+                "id": "1",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T15:15:00"
+                },
+                "arrival": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T17:15:00"
+                },
+                "carrierCode": "AI",
+                "number": "572",
+                "aircraft": {
+                  "code": "32A"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H",
+                "id": "2",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          },
+          {
+            "duration": "PT10H50M",
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "MAA",
+                  "terminal": "1",
+                  "at": "2023-06-24T21:40:00"
+                },
+                "arrival": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-24T23:50:00"
+                },
+                "carrierCode": "AI",
+                "number": "574",
+                "aircraft": {
+                  "code": "32N"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT2H10M",
+                "id": "25",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              },
+              {
+                "departure": {
+                  "iataCode": "BOM",
+                  "terminal": "2",
+                  "at": "2023-06-25T06:45:00"
+                },
+                "arrival": {
+                  "iataCode": "BLR",
+                  "at": "2023-06-25T08:30:00"
+                },
+                "carrierCode": "AI",
+                "number": "603",
+                "aircraft": {
+                  "code": "320"
+                },
+                "operating": {
+                  "carrierCode": "AI"
+                },
+                "duration": "PT1H45M",
+                "id": "26",
+                "numberOfStops": 0,
+                "blacklistedInEU": false
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "total": "17088.00",
+          "base": "14306.00",
+          "fees": [
+            {
+              "amount": "0.00",
+              "type": "SUPPLIER"
+            },
+            {
+              "amount": "0.00",
+              "type": "TICKETING"
+            }
+          ],
+          "grandTotal": "17088.00"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": true
+        },
+        "validatingAirlineCodes": [
+          "AI"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "INR",
+              "total": "17088.00",
+              "base": "14306.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "1",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "2",
+                "cabin": "ECONOMY",
+                "fareBasis": "LIP",
+                "class": "L",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "25",
+                "cabin": "ECONOMY",
+                "fareBasis": "LIP",
+                "class": "L",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              },
+              {
+                "segmentId": "26",
+                "cabin": "ECONOMY",
+                "fareBasis": "UIP",
+                "class": "U",
+                "includedCheckedBags": {
+                  "weight": 25,
+                  "weightUnit": "KG"
+                }
+              }
+            ]
+          }
+        ]
+      } ],
+      "dictionaries": {
+        "locations": {
+          "BOM": {
+            "cityCode": "BOM",
+            "countryCode": "IN"
+          },
+          "IXB": {
+            "cityCode": "IXB",
+            "countryCode": "IN"
+          },
+          "BLR": {
+            "cityCode": "BLR",
+            "countryCode": "IN"
+          },
+          "DEL": {
+            "cityCode": "DEL",
+            "countryCode": "IN"
+          },
+          "MAA": {
+            "cityCode": "MAA",
+            "countryCode": "IN"
+          }
+        },
+        "aircraft": {
+          "319": "AIRBUS A319",
+          "320": "AIRBUS A320",
+          "321": "AIRBUS A321",
+          "737": "BOEING 737 ALL SERIES PASSENGER",
+          "32A": "AIRBUS A320 (SHARKLETS)",
+          "32N": "AIRBUS A320NEO"
+        },
+        "currencies": {
+          "INR": "INDIAN RUPEE"
+        },
+        "carriers": {
+          "SG": "SPICEJET",
+          "AI": "AIR INDIA"
+        }
+      }
+    }
+  
